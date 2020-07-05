@@ -1,0 +1,75 @@
+TOKEN PARSE:
+PERIOD -> ;
+MOOD -> Lā | cī | kā | wē
+MOOD -> [il-|ho-|tō-]Kēñ
+NP_MOOD ->  (Ma-|sū-|ja-|rā-|rū-)Kēñ					
+NEG_PARTICLE -> wā
+I_PARTICLE -> ī
+CLMOD -> jē nāra
+CLMOD_SE -> Kexien | taxien | alxien		
+CLMOD_SV -> Cēxeja|māseja
+CLMOD_CONTINUOUS -> Luhañen
+CLMOD_TENSE -> ōrra | tiēlen | rēha
+CLMOD_MODAL -> hēja | hīja | cēja	
+CLMOD_TIME -> ilnahan | ilnaren | ilnāja | ilniþa | ilwae | illorren | illaniþ | iēlte | āl | anniþen | ilaþ
+CLMOD_WHEN -> il
+COOR_CONJ -> ew | āe | hi | ē
+AP_PARTICLE ->  aþ
+TO_CONJ -> tō | tō jāo | tō tūaþ | tōnaren 
+NE_CONJ  -> nā ñe | pē ñe | jē sōta ñe
+NE_PARTICLE -> ñe
+OTHER_CONJ -> ewaþ
+LA_RELATIONAL -> wa | la
+TE_PARTICLE -> te
+PA_PARTICLE -> pa
+A_PARTICLE -> ā
+NI -> ñi | ñalla | ñalna | ñalta | ñanna | ñanta | ñarra | ñarna | ñarta | ñamma | ñatta | ñaxxa
+SE -> se
+SEB -> sele | selne | selte | senne | saña | sere | serne | serte | sema | sete | sexe
+//te variations not noted for time
+SESB -> 
+ Seleñ | selneñ | selteñ | senneñ | sañañ | sereñ | sirneñ | sirteñ | semeñ | seteñ | sexeñ
+Serle | sirnele | sirtele | semle | setle | sexle
+Serelne | sirnelne | sirtelne | semelne | setelne | sexelne
+Serelte | sirnelte | sirtelte | semelte | setelte | sexelte
+Serenne | sirnenne | sirtenne | semenne | setenne | sexenne
+Seraña | sirnaña | sirtaña | semaña | setaña | sexaña
+Selre | selnere | seltere | sennere | sanre | semre | setre | sexre
+Selirne | selnirne | seltirne | sennirne | sañirne | semirne | setirne | sexirne
+Selirte | selnirte | seltirte | sennirte | sañirte | semirte | setirte | sexirte
+Selme | selneme | selteme | senneme | sañeme | serme | sirneme | sirteme | semme | setme | sexme
+Selete | selnete | seltete | sennete | sañete | serete | sirnete | sirtete | semete | setete | sexete
+Selesse | selnesse | seltesse | sennesse | sañesse | seresse | sirnesse | sirtesse | semesse | setesse | sexesse
+//te variations not noted for time
+SES ->  salla | salna | salta | sanna | santa | sarra | sarna | sarta | samma | satta | saxxa
+//te variations not noted for time.
+SE_SRC -> ke|to 
+SE_BEN -> mo 
+SE_QUOTE -> ien
+TITLE -> λi
+ADJ_PREP -> Jē | nīkan
+ANEN_PREP -> ānen
+EMMA_PARTICLE -> ēmma
+LOC_PREP -> sū | rū | rā
+LMOD_PARTICLE -> hāl | īr | ōl | tā | mē
+LMOD_PARTICLE -> Tēsa | hūta | nū | kiē | ālme | āñ
+NO_PARTICLE -> nō
+PEXA_PARTICLE -> pēxa
+MOD -> Sūjāñ | rājāñ | rūjāñ | rājanō | rūjapēxa | nāpie | ŋō | nā |āmīwe | ām | pē pē | pē | ān tēna | tēna | nāra
+INDEF_PN_MOD -> janaren | jannarien | jawae | janahan | manaren | mannarien | mawae | manahan | honnarien | howae | honahan 
+DEF_PN_MOD -> Xō | þō | āke
+PN -> Le | ri | ma | ja
+PN -> Liēn | liēnne | lēim | liēþ | liēr | ñēim | ñiēþ | riēn | riēnne | rēim | riēþ | sāen | sāenne | sāim | sāeþ
+BASE_N -> janāra | jawāe | japē | jañīña | jaŋŋīra | jāmīwe | janāe | jaŋō | janāpie
+//SINGULAR, PLURAL, COLLECTIVE, 
+/////////////////////////////HOW DO I CAPTURE PL nouns which end in āe
+IN_PL_N -> j(alphabet)*i
+IN_SG_N -> j(alphabet)*
+IN_CL_N -> an(alphabet)*i
+IN_ST_N -> an(alphabet)*
+AN_CL_N -> m(alphabet)*i
+AN_PL_N -> m(alphabet)*ien
+AN_SG_N -> m(alphabet)*   
+POSS_N -> (l|r|s) (p|t|s|c|k|w|þ|x|j|h|m|mm|n|nn|ñ|ññ|ŋ|ŋŋ|l|ll|λ|r|rr|rj|i|e|a|o|u|ī|ē|ā|ō|ū|ae|ao|ie|āe|āo|iē)*
+//full romanized alphabet.
+/////////////////////////////////THERE ARE MORE CLAUSAL MODIFIERS
