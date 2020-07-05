@@ -8,7 +8,7 @@ Make an clear-box oracle AI which can get a 36 on an ACT exam in the time it tak
 By clear-box I mean that the AI's knowledge and understanding can be comprehended by any programmer.
 
 ## Project Strategy:
-1. Make a Kelen to TLA+ transpiler which uses some common knowledge structure.
+1. Make a [Kelen](https://www.terjemar.net/kelen/kelen.php) to TLA+ transpiler which uses some common knowledge structure.
   a. SKIP making a kelen de-abrieviator preprocessor
   b. Make a Kelen lexer
   c. Make a Kelen parser
