@@ -1,0 +1,90 @@
+Excluding Pronouns which are inherently context sensitive is Kēlen a context free grammar?
+There are some semi-contextual elements ( non expansion rules, but it looks like it can be approximated by 
+CFG attempt:						Nonterminal descriptions.
+ - > $P$						                          P is paragraph; $ is end/beginning of file
+P -> S | PS					                        	S is sentence
+S -> C [M] ;				                      		C is clause ; M is mood
+M -> Lā | cī | kā | wē
+NP M -> Ma-|sū-|ja-|rā-|rū-  Kēñ	        		NP is noun phrase	
+M -> [il-|ho-|tō-] Kēñ					
+C -> [CLMOD...] FRP [CLMOD…]	             		FRP is Full relational phrase
+CLMOD  -> ānen SN					                    SN is a stative Noun.
+CLMOD -> ī|jē nāra|wā				                  CLMOD is clausal modifier;
+FRP -> RP [_E] [_V] [_T] [_I]				          RP is relational phrase
+..............................................Below is a section which is technically context sensitive but 
+..............................................could be expanded to be context free by letting all possibilities
+..............................................of arrangement be their own code
+_E _V -> _V _E					                      _E, _V, _T, _I are movable clausal modifiers where you probably 
+ _V _T -> _T _V                               can only have one of each of them.     
+_E _T -> _T _E 
+_T _I -> _I _T
+_E _I -> _I _E
+_V _I -> _I _V
+RP _E -> (CLMOD_SE RP)|(RP CLMOD_SE)
+RP _V -> (CLMOD_SV RP)|( RP CLMOD_SV)
+RP _T -> (CLMOD_T RP)|(RP CLMOD_T)
+RP _I -> (CLMOD_TIME RP)				              CLMOD_TIME is a clausal modifier of time
+CLMOD_SE -> Kexien|taxien|alxien			        CLMOD_SE expresses speaker expectation
+CLMOD_SV -> Cēxeja|māseja			                CLMOD_SV expresses speaker attitude
+CLMOD_T -> Luhañen|ōrra|tiēlen			          CLMOD_T expresses tense/mood but might
+CLMOD_T -> rēha|hēja|hīja|cēja			          not fully capture all possible tenses
+CLMOD_TIME -> ilnahan|ilnaren|ilnāja|ilniþa|ilwae|illorren|illaniþ|iēlte|āl|anniþen|ilaþ
+CLMOD_TIME -> Il N					                  N is a single word noun.
+CLMOD_TIME -> Il NP il
+CLMOD_TIME -> Il C il
+NP -> Ew NP ew NP
+NP -> Ē NP (ew)|(āe)|(ī)|(hi)|(aþ)|(ē) NP
+NP -> Āe NP āe NP
+NP -> Hi NP hi NP
+--------------------------------------------------------E I vs E E distinction missing...
+C -> Ew C ew C
+C -> Ē C (ew)|(āe)|(ī)|(hi)|(aþ)|(ē) C
+C -> Āe C āe C
+C -> Hi C hi C
+-------------------------------------------------------Ignoring old fashion conjunctions
+C -> C T C			                              T is a non-coordinating conjunction with causal meaning
+T -> (tō)|(tō jāo)|(tō tūaþ)|(tōnaren)
+C -> C NE NP			                            NE is a comparison conjunction which implies an elliptical phrase
+NE -> (ñe)|(nā ñe)|(pē ñe)|(jē sōta ñe)
+C -> C ewaþ C		                              Another conjunction.
+-------------------------------------------------------don’t get: il aþ ; as yet.
+RP -> LA NP			                              LA is the relational of existence
+RP -> LA NP NP
+RP -> LA NP PA NP
+LA -> Wa|te|la
+PA -> Pa			                                PA is the relational of possession which can be mixed with LA
+RP -> NI NP			                              NI is the relational of change.
+RP -> NI NP NP
+RP -> NI NP A NP		                          A is the actor marker for the relational of change
+RP -> NI NP NP A NP
+A -> Ā|tō
+NI -> ñi|ñalla|ñalna|ñalta|ñanna|ñanta|ñarra|ñarna|ñarta|ñamma|ñatta|ñaxxa
+RP -> SE N			                              SE is the relational of transactions.
+RP -> SESB NP		                              SESB is SE but conjugated for source and beneficiary
+RP -> SEB NP			                            SEB is SE but conjugated for beneficiary only
+RP -> SESB NP ke|to NP mo NP
+RP -> SESB NP ien P ;
+RP -> SESB NP ke|to NP mo NP ien P ;
+SESB -> ….                                    I didn't want to type up all of the verbs inflections.
+SEB -> ….
+SE -> Se|te 
+RP -> PA NP NP
+NP -> PP NP					                          PP is a prepositional particle
+NP -> NP MOD				                          MOD is a modifier
+NP -> N|PN					                          PN is a pronoun
+PP -> Λi 
+MOD -> Jē|nīkan NP
+MOD -> Ānen NP [wā|ēmma]
+MOD -> LOC NP LMOD			                      LOC is a location preposition
+LOC -> sū|rū|rā
+LMOD -> hāl|īr|ōl|tā|mē|ēmma		              LMOD is a location specifier	
+LMOD -> Tēsa|hūta|nū|kiē|ālme|āñ
+MOD -> Rā NP nō
+MOD -> Rū NP pēxa
+MOD -> Sūjāñ|rājāñ|rūjāñ|rājanō|rūjapēxa
+MOD -> nāpie|ŋō|nā|āmīwe|ām|pē pē|pē|wā|ān tēna|tēna|nāra
+N -> ...                                      I didn't want to work on nouns initially.
+MOD | PN -> janaren|jannarien|jawae|janahan|manaren|mannarien|mawae|manahan|honnarien|howae|honahan 
+PN -> Xō|þō|āke
+PN -> Le|ri|ma|ja
+PN -> Liēn|liēnne|lēim|liēþ|liēr|ñēim|ñiēþ|riēn|riēnne|rēim|riēþ|sāen|sāenne|sāim|sāeþ
