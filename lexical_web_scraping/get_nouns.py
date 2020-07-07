@@ -42,4 +42,4 @@ for link in word_links :
 	form = link.find("span", class_ = "kelen field").get_text();
 	if not is_word.search(form) :
 		url = urlStem + link.get('href')
-		print(form)
+		print(url)
