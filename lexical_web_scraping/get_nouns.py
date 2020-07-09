@@ -13,9 +13,11 @@ not_word = re.compile('-')
 is_noun = re.compile('\[N')
 is_stem = re.compile('-.+-')
 find_whitespace = re.compile('\s+')
+start = input("Start at what number?")
+end = input("End at what number?")
 #open target files
-nouns = open("kelen nouns.csv",'x', encoding ='utf-16-le')
-etc = open("kelen not nouns.csv", 'x', encoding = 'utf-16-le')
+nouns = open("kelen nouns.csv",'a', encoding ='utf-16-le')
+etc = open("kelen not nouns.csv", 'a', encoding = 'utf-16-le')
 #gather the main page
 response = post(url, data={'passed': '', 'QueryType': "Form" })
 safe_text = response.text#.translate(non_bmp_map)
@@ -25,7 +27,7 @@ word_links = html_soup.find_all('a', href =re.compile('formlisting'))
 i = 0 # for progress
 for link in word_links :
 	form = link.find("span", class_ = "kelen field").get_text()
-	if not not_word.search(form) :
+	if not not_word.search(form) and i< end and i >= start :
 		#look at the page for the specific word.
 		url = urlStem + link.get('href')
 		time.sleep(2)#to prevent ddosing
