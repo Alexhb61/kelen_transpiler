@@ -26,6 +26,7 @@ html_soup = BeautifulSoup(safe_text, 'html.parser')
 word_links = html_soup.find_all('a', href =re.compile('formlisting'))
 i = 0 # for progress
 for link in word_links :
+	i += 1
 	form = link.find("span", class_ = "kelen field").get_text()
 	if not not_word.search(form) and i< end and i >= start :
 		#look at the page for the specific word.
@@ -53,7 +54,6 @@ for link in word_links :
 		else :
 			etc.write(form + ',' + part_of_speech + ',' + stem + '\n')
 		print(i)
-		i += 1
 #close the files for safety.			
 nouns.close()
 etc.close()
