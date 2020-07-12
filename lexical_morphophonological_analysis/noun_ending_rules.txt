@@ -7,8 +7,12 @@ input word -> number, ending, options
 	-> singular, īj -> iē morph
 2. m|n|ñ|ŋ|l|λ|r|rj ending 
 	-> singular, null suffix with exceptions
-2e. exceptions: inanimate noun with ien ending with previous vowel long 
-	-> singular, n suffix 
+2e1. consanant \1 i e n
+	-> distributive plural, \1 i e n suffix	
+2e2. exceptions: noun with ien ending with previous vowel long 
+	-> singular, n suffix  with exceptions
+2e*e.  pāŋŋien|sēttien|tārharrien|ānnien|ōrrien|hālien stem
+	-> singular, no suffix
 3. consanant consanant e ending
 	-> singular, e suffix with exceptions
 3e. ōrxe ending
@@ -19,11 +23,11 @@ input word -> number, ending, options
 	-> singular, null suffix
 6. consanant ā|a e ending
 	-> singular, j -> e morph with exceptions
-6e. nae ending
+6e1. nae ending
 	-> plural, i suffix, ji -> e morph
-6ee. m āe ending
+6e2. m āe ending
 	-> plural, i suffix, i -> e morph
-6eee. w āe ending
+6e3. w āe ending
 	-> singular, null suffix
 7. īwe ending
 	-> singular, e suffix with exceptions
@@ -35,5 +39,3 @@ input word -> number, ending, options
 	-> plural, a suffix ???
 9. i ending
 	-> plural, i suffix
-10. consanant \1 i e n
-	-> distributive plural, \1 i e n suffix
