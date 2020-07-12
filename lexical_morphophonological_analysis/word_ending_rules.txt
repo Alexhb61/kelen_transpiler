@@ -1,0 +1,35 @@
+Decision Tree Google sheets:
+What I percieved/read
+input word -> number, ending, options
+1. consanant ā|ē|ī|ū|ō|o|u ending 
+	-> singular, null suffix with exceptions
+1e. wiē ending
+	-> singular, īj -> iē morph
+2. m|n|ñ|ŋ|l|λ|r|rj ending 
+	-> singular, null suffix with exceptions
+2e. exceptions: inanimate noun with ien ending with previous vowel long 
+	-> singular, n suffix 
+3. consanant consanant e ending
+	-> singular, e suffix with exceptions
+3e. ōrxe ending
+	-> singular, xe suffix 	
+4. ēie ending
+	-> singular, j -> ie morph
+5. Consanant ie ending
+	-> singular, null suffix
+6. consanant ā|a e ending
+	-> singular, j -> e morph with exceptions
+6e. nae ending
+	-> plural, i suffix, ji -> e morph
+6ee. m āe ending
+	-> plural, i suffix, i -> e morph
+6eee. w āe ending
+	-> singular, null suffix
+7. īwe ending
+	-> singular, e suffix with exceptions
+7e. āmīwe ending
+	-> singular, null suffix
+8.  a ending
+	-> singular, a suffix
+8e. cāra ending
+	-> plural, a suffix ???
