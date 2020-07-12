@@ -30,7 +30,7 @@ The ACT is a hard test of knowledge, skill, and intellect which there are freely
 ## Why use TLA+/PlusCal:
 So philosophers introduced different modal logics to handle different tenses / moods /modes of natural language meaning. Because I am trying to make an orcale which understands these tenses/moods/modes, it will be productive to have a programing language which sufficiently can handle those moods. TLA stands for the temporal logic of actions, and already has direct support for some of temporal tenses with its [], and <> operators. Furthermore, with TLA+ being designed to handle distributed dynamic systems, TLA+ inherently has the ability to express nondeterministic behaviour. This is useful because large swaths of language behave nondeterministicly. This project plans to use PlusCal because it transpiles to TLA+ and is easier to express programs in. Because Kelen naturally feels like a programming language, the project plans to transpile Kelen to PlusCal then to TLA+.
 
-### what do you mean by nondeterministic programming:
+### What do you mean by nondeterministic programming?
 So the type of nondeterministic programming with which most people are familiar is behaviour which relies on pseudorandom number generation to produce variation in behaviour. By nondeterministic programming I mean something which is more similar to how language works. Lets give an example:
 Two simple deterministic programming techniques, the switch statement and the if-else statement:
 `
