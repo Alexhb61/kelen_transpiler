@@ -33,3 +33,7 @@ input word -> number, ending, options
 	-> singular, a suffix
 8e. cāra ending
 	-> plural, a suffix ???
+9. i ending
+	-> plural, i suffix
+10. consanant \1 i e n
+	-> distributive plural, \1 i e n suffix
