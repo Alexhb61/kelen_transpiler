@@ -1,6 +1,7 @@
 Decision Tree Google sheets:
 What I percieved/read
 input word -> number, ending, options
+These are comprehension rules not production rules, they may not help distinguish which word to produce.
 1. consanant ā|ē|ī|ū|ō|o|u ending 
 	-> singular, null suffix with exceptions
 1e. wiē ending
