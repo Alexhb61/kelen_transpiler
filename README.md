@@ -9,12 +9,12 @@ By clear-box I mean that the AI's knowledge and understanding can be comprehende
 
 ## Project Strategy:
 1. Make a [Kelen](https://www.terjemar.net/kelen/kelen.php) to TLA+ transpiler which uses some common knowledge structure.
-  a. SKIP making a kelen de-abrieviator preprocessor
-  b. Make a Kelen lexer
-  c. Make a Kelen parser
-  d. Make a kelen word to stem converter
-  e. Make an abstract syntax tree to code converter
-  f. Make a context where the code runs and manages state and prints results.
+    1. SKIP making a kelen de-abrieviator preprocessor
+    2. Make a Kelen lexer
+    3. Make a Kelen parser
+    4. Make a kelen word to stem converter
+    5. Make an abstract syntax tree to code converter
+    6. Make a context where the code runs and manages state and prints results.
 2. Make a Standard American English to Kelen Translator
 3. Make a common knowledge generator.
 4. Make a TLA+ output to multiple choice answer key engine.
@@ -32,6 +32,7 @@ So philosophers introduced different modal logics to handle different tenses / m
 
 ### What do you mean by nondeterministic programming?
 So the type of nondeterministic programming with which most people are familiar is behaviour which relies on pseudorandom number generation to produce variation in behaviour. By nondeterministic programming I mean something which is more similar to how language works. Lets give an example:
+
 Two simple deterministic programming techniques, the switch statement and the if-else statement:
 `
 switch(a){
@@ -46,6 +47,7 @@ if a :
 else :
     do_a_different_thing()
 `
+
 vs. Two simple nondeterministic programming techniques
 `
 with a \in range() :
@@ -57,4 +59,5 @@ or
     produce_output_b();
 end either;
 `
+
 So in the deterministic examples we have the control of the program branch and only one branch is executed from the programmer's perspective with one example having two choices and the other having many; however, in the nondeterministic examples, if that pluscal was run, execution itself would split into 'threads' and each 'thread' would take a different branch, but from the programmer's perspective  all branches are executed. So the nondeterminism we are talking about is where one models all possibilities instead of the nondeterminism where one randomly choose one possibility from all possibilities.
