@@ -1,7 +1,10 @@
 # kelen_transpiler
 
 ## Why am I working on this project?
-So after learning about how GPT-2 is a opaque-box which doesn't help linguists learn anything, I got angry and wanted to work on natural language processing in a way that uses/interacts with the field of linguistics. Later after auditing a Complier class and making an extremely useless compiler, I decided I wanted to make some sort of transpiler. Later I learned that GPT-3 is barely able to do arithmetic, but can solve lots of word type problems, and can make lots of art. This all lead to the main idea of this project.
+So after learning about how GPT-2 is a opaque-box which doesn't help linguists learn anything, I got angry and wanted to work on natural language processing in a way that uses/interacts with the field of linguistics. Later after auditing a Complier class and making an extremely useless compiler in my comparative programming languages class, I decided I wanted to make some sort of transpiler. Later I learned that GPT-3 is barely able to do arithmetic, but can solve lots of word type problems, and can make lots of art. This all lead to the main idea of this project. I then randomly happened across the perfect tools for this project when I was watching Jan Misali critique different conlangs, and I was really inspired to make something which worked with the conlang Kelen. I was additionally also exposed to the appropriate programming language to handle the nondeterminism of natural language with PlusCal via my interest in formal specification. 
+
+### Why am I working on such a hard project?
+The intent here is to learn useful programming and linguistic skills, and learn why these problems are hard. I know this project might be impossible to do on my own, but I hope to make an interesting enough progress that some computational linguists will want to help me or that I will continue to have fun while the project lasts.
 
 ## Project Goal:
 Make an clear-box oracle AI which can get a 36 on an ACT exam in the time it takes a person to normally do an ACT exam.
@@ -20,7 +23,7 @@ By clear-box I mean that the AI's knowledge and understanding can be comprehende
 4. Make a TLA+ output to multiple choice answer key engine.
 
 ## Why the conlang Kelen :
-Kelen is a conlang which is in universe an alien language. It almost violates one of the universals of language: having verbs. However, it is still a very expressive conlang which could actually be spoken. Additionally, It does something rare for a natural language: excluding pronouns and contractions, Kelen has a context free grammar. Lastly,  Kelen seems to have few enough actions that each action can relate to a clear programtic step in logic. Together these make Kelen a great stepping stone for transversing the natural language-programming language divide. Kelen can be spoken, Kelen can express any thought, Kelen can be parsed and lexed, Kelen might be programmable. Can Kelen be transpiled and compiled into executable code?
+Kelen is a conlang which is in universe an alien language. It almost violates one of the universals of language: having verbs. However, it is still a very expressive conlang which could actually be spoken. Additionally, It does something rare for a natural language: excluding pronouns and contractions, Kelen has a context free grammar. Lastly,  Kelen seems to have few enough actions that each action can relate to a clear programtic step in logic. Together these make Kelen a great stepping stone for transversing the natural language-programming language divide. Kelen can be spoken, Kelen can express any thought, Kelen can be parsed and lexed, Kelen might be programmable. Can Kelen be transpiled and compiled into executable code? I hope to find out.
 ### What is a transpiler?
 A transpiler is between compiler and a translator. It doesn't produce an executable, but it does change a language from one thing into another.
 
@@ -30,7 +33,7 @@ The ACT is a hard test of knowledge, skill, and intellect which there are freely
 ## Why use TLA+/PlusCal:
 So philosophers introduced different modal logics to handle different tenses / moods /modes of natural language meaning. Because I am trying to make an orcale which understands these tenses/moods/modes, it will be productive to have a programing language which sufficiently can handle those moods. TLA stands for the temporal logic of actions, and already has direct support for some of temporal tenses with its [], and <> operators. Furthermore, with TLA+ being designed to handle distributed dynamic systems, TLA+ inherently has the ability to express nondeterministic behaviour. This is useful because large swaths of language behave nondeterministicly. This project plans to use PlusCal because it transpiles to TLA+ and is easier to express programs in. Because Kelen naturally feels like a programming language, the project plans to transpile Kelen to PlusCal then to TLA+.
 
-### What do you mean by nondeterministic programming?
+### What do I mean by nondeterministic programming?
 So the type of nondeterministic programming with which most people are familiar is behaviour which relies on pseudorandom number generation to produce variation in behaviour. By nondeterministic programming I mean something which is more similar to how language works. Lets give an example:
 
 Two simple deterministic programming techniques, the switch statement and the if-else statement:
