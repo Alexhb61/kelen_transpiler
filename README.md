@@ -1,5 +1,8 @@
 # kelen_transpiler
 
+## Project Cancelled:
+This project was too ambitious and I stopped working on it, because I lacked the resources.
+
 ## Why am I working on this project?
 So after learning about how GPT-2 is a opaque-box which doesn't help linguists learn anything, I got angry and wanted to work on natural language processing in a way that uses/interacts with the field of linguistics. Later after auditing a Complier class and making an extremely useless compiler in my comparative programming languages class, I decided I wanted to make some sort of transpiler. Later I learned that GPT-3 is barely able to do arithmetic, but can solve lots of word type problems, and can make lots of art. This all lead to the main idea of this project. I then randomly happened across the perfect tools for this project when I was watching Jan Misali critique different conlangs, and I was really inspired to make something which worked with the conlang Kelen. I was additionally also exposed to the appropriate programming language to handle the nondeterminism of natural language with PlusCal via my interest in formal specification. 
 
